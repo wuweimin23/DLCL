@@ -7,7 +7,7 @@ $$
 $$
 
 $$
-\text{subject to } Bx = c 
+Bx = c 
 $$
 
 $$
@@ -16,7 +16,7 @@ $$
 
 ## Parameterized Constrained Lasso Problem
 
-\begin{equation}
+$$
     \begin{aligned}
     & \Sigma =  LL^{T} \\
     &\hat{L} = L + W_{2} \\
@@ -26,7 +26,7 @@ $$
     \text{subject to } &  Bx = c \\
       &  Dx \leq g \\
     \end{aligned}
-\end{equation}
+$$
 
 ## Training
 The code implements the numerical experiments for one of the three settings in paper "Pre-Parameterization And Differentiable Layer For Constrained Lasso"
