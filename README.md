@@ -17,15 +17,15 @@ where $x \in \mathbb{R}^{n}$ is the variable, $\Sigma \in \mathbb{R}^{n \times n
 
 $$
     \begin{aligned}
-    & \Sigma =  LL^{T} \\
-    &\hat{L} = L + W_{2} \\
-    &\hat{\Sigma}  =  \hat{L}\hat{L}^{T} \\
-    &\hat{b}  =  b + W_{3}b \\
-    \underset{x}{\operatorname{minimize}} & \frac{1}{2} x^{T} \hat{\Sigma} x + \hat{b}^{T}x + \lambda ||x||_{1} \\
-    \text{subject to } &  Bx = c \\
-      &  Dx \leq g \\
+    \Sigma & = LL^{T} \\
+    \hat{L} & = L + W_{1}L + W_{2} \\
+    \hat{\Sigma} &  = \hat{L}\hat{L}^{T} \\
+    \hat{b} & =b + W_{3}b + W_{4}
     \end{aligned}
+    \label{e7}
 $$
+
+where $W_{1}, W_{2}, W_{3} \in \mathbb{R}^{n \times n}, W_{4} \in \mathbb{R}^{n}$ are the trainable parameters.
 
 ## Training
 The code implements the numerical experiments for one of the three settings in paper "Pre-Parameterization And Differentiable Layer For Constrained Lasso"
