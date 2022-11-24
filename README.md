@@ -3,16 +3,13 @@ Constrained Lasso has been a widely used problem in convex optimization. Most ex
 
 ## Constrained Lasso Problem
 $$
-\underset{x}{\operatorname{minimize}}  \frac{1}{2} x^{T} \Sigma x + b^{T}x + \lambda ||x||_{1} 
+    \begin{aligned}
+    \underset{x}{\operatorname{minimize}} &  \frac{1}{2} x^{T} \Sigma x + b^{T}x + \lambda ||x||_{1} \\
+    \text{subject to } &  Bx = c \\
+      &   Dx \leq g \\
+    \end{aligned}
 $$
-
-$$
-Bx = c 
-$$
-
-$$
-Dx \leq g 
-$$
+where $x \in \mathbb{R}^{n}$ is the variable, $\Sigma \in \mathbb{R}^{n \times n}$ (a positive semi-definite matrix), $b \in \mathbb{R}^{n}$, $B \in \mathbb{R}^{m \times n}$, $c \in \mathbb{R}^{m}$, $D \in \mathbb{R}^{k \times n}$, $g \in \mathbb{R}^{k}$ are the problem data, and $\lambda$ is a scalar.
 
 ## Parameterized Constrained Lasso Problem
 
