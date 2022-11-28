@@ -25,7 +25,6 @@ $$
     \hat{\Sigma} &  = \hat{L}\hat{L}^{T} \\
     \hat{b} & =b + W_{3}b + W_{4}
     \end{aligned}
-    \label{e7}
 $$
 
 where $W_{1}, W_{2}, W_{3} \in \mathbb{R}^{n \times n}, W_{4} \in \mathbb{R}^{n}$ are the trainable parameters.
