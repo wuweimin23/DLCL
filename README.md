@@ -34,4 +34,4 @@ The code implements the numerical experiments for one of the three settings in p
 
 ## Results
 
-Pre-parameterization method brings 9.0% to 70.7% improvement on the precision matrix estimation. And DLCL runs highly faster than existing differentiable layers for large-scale optimization problems (nearly 10 times faster than OptNet, and nearly 100 times faster than CvxpyLayer). </p>
+Pre-parameterization method brings at least 9.0% improvement on the precision matrix estimation. And DLCL runs highly faster than existing differentiable layers for large-scale optimization problems (nearly 10 times faster than OptNet, and nearly 100 times faster than CvxpyLayer). </p>
